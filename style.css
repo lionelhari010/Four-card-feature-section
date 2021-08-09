@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(229, 6%, 95%);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+/* Heading */
+.main-heading {
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 50px;
+}
+
+.heading__main {
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+
+.heading__sub {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+.heading__para {
+  color: hsl(229, 6%, 66%);
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Cards */
+.cards {
+  width: 100%;
+  height: 500px;
+  gap: 7px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.display-column {
+  display: flex;
+  flex-direction: row;
+}
+.cards * h2 {
+  color: hsl(234, 12%, 34%);
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-left: 25px;
+}
+.cards * p {
+  color: hsl(229, 6%, 66%);
+  font-size: 12px;
+  padding-top: 7px;
+  padding-left: 25px;
+  padding-right: 20px;
+}
+
+.cards * img {
+  position: relative;
+  flex-direction: row;
+  width: 50px;
+  height: 50px;
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin-top: auto;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+.card-supervisor {
+  display: flex;
+  flex-direction: column;
+  width: 315px;
+  height: 225px;
+  margin: 15px;
+  border-top-style: solid;
+  border-top-width: 4px;
+  border-top-color: hsl(180, 62%, 55%);
+  border-radius: 5px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.card-team-builder {
+  display: flex;
+  flex-direction: column;
+  width: 315px;
+  height: 225px;
+  margin: 15px;
+  border-top-style: solid;
+  border-top-width: 4px;
+  border-top-color: hsl(0, 78%, 62%);
+  border-radius: 5px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.card-karma {
+  display: flex;
+  flex-direction: column;
+  width: 315px;
+  height: 225px;
+  margin: 15px;
+  margin-top: 30px;
+  border-top-style: solid;
+  border-top-width: 4px;
+  border-top-color: hsl(34, 97%, 64%);
+  border-radius: 5px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.card-calculator {
+  display: flex;
+  flex-direction: column;
+  width: 315px;
+  height: 225px;
+  margin: 15px;
+  border-top-style: solid;
+  border-top-width: 4px;
+  border-top-color: hsl(212, 86%, 64%);
+  border-radius: 5px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* MQ for mobile*/
+
+@media only screen and (max-width: 780px) {
+  body {
+    margin: 15px 10px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    width: 100vw;
+    height: 127vh;
+    gap: 5px;
+  }
+  .display-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main-heading {
+    font-size: 13px;
+    margin: 30px;
+    width: 80vw;
+  }
+  .cards {
+    width: 96vw;
+  }
+  .heading__para {
+    font-size: 12px;
+  }
+  .clear-br {
+    content: "";
+  }
+}
